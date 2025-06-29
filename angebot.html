@@ -1,82 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-<link rel="stylesheet" href="high4.css">
-<meta charset="UTF-8">
-<title>Vyral.club</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyral.club - Premium Community</title>
+    <link rel="stylesheet" href="angebot.css">
+    <!-- Hashtag Generator Skript -->
+    <script src="hashtag-generator.js" defer></script>
 </head>
 <body>
-<header>
-<nav>
-<ul>
+    <header class="kopfbereich">
+        <nav class="hauptnavigation">
+            <ul class="navigationsliste">
+                <li class="navigationspunkt"><a href="home.html" class="navigationslink aktuell">Startseite</a></li>
+                <li class="navigationspunkt"><a href="ueber_uns.html" class="navigationslink">Über uns</a></li>
+                <li class="navigationspunkt"><a href="abo_optionen.html" class="navigationslink">Abo-Optionen</a></li>
+                <li class="navigationspunkt"><a href="hashtag_generator.html" class="navigationslink">Hashtag-Generator</a></li>
+            </ul>
+        </nav>
+        
+        <div class="hero-bereich">
+            <h1 class="hauptueberschrift">Werden Sie Teil von Vyral.club</h1>
+            <p class="untertitel">Exklusive Inhalte für ambitionierte Creator</p>
+            <a href="#abo-optionen" class="aktion-button">Jetzt Mitglied werden</a>
+            <!-- PayPal Link kommt später -->
+        </div>
+    </header>
 
-<li><a href="Home.html">Home</a></li>
-<li><a href="ueber_uns.html">Über uns</a></li>
-<li><a href="Abo_Option.html">Abo-Optionen</a></li>
-<li><a href="Hashtag_genrator.html">Hashtag Genrator</a></li>
-</ul>
-</nav>
-<div class="hero">
-<h1>Werden Sie Teil von Vyral.club</h1>
-<p>Erhalten Sie exklusiven Zugang zu unseren Inhalten und vielem mehr.</p>
-<a href="#" class="cta">Jetzt abonnieren</a>
-<!--unter silber paypal link(Zahlungsmetohden)-->
-</div>
-</header>
-<main>
-<section>
-<h2>Unsere Abonnements</h2>
-<p>Wählen Sie das Abo, das am besten zu Ihnen passt.</p>
-<div class="plans">
-<div class="plan">
-<h3>Silber</h3>
-<div class="price">
-<span>9,99 €</span>
-<small>/Monat</small>
-</div>
-<ul>
-<li>Exklusiver Zugang zu unserem Content</li>
-<li>Wöchentliche E-Mail-Updates</li>
-<li>Begrenzte Community-Funktionen</li>
-</ul>
-<a href="#" class="cta">Jetzt abonnieren</a>
-</div>
-<div class="plan">
-<h3>Diamond</h3>
-<div class="price">
-<span>29,99 €</span>
-<small>/Monat</small>
-</div>
-<ul>
-<li>Unbegrenzter Zugang zu unserem Content</li>
-<li>Tägliche E-Mail-Updates</li>
-<li>Erweiterte Community-Funktionen</li>
-</ul>
-<a href="https://www.youtube.com/" class="cta">Jetzt abonnieren</a>
-<!--unter diamond paypal link(Zahlungsmetohden)-->
-</div>
-<div class="plan">
-<h3>Premium</h3>
-<div class="price">
-<span>59,99 €</span>
-<small>/Monat</small>
-</div>
-<ul>
-<li>Unbegrenzter Zugang zu unserem Content</li>
-<li>Tägliche E-Mail-Updates</li>
-<li>Erweiterte Community-Funktionen</li>
-<li>Exklusive VIP-Veranstaltungen</li>
-<li>Persönlicher Kundenservice</li>
-</ul>
-<a href="#" class="cta">Jetzt abonnieren</a>
-<!--unter premium paypal link(Zahlungsmetohden)-->
-</div>
-</div>
-</section>
-  
-<h2 id = "lol">Unsere Inhalte</h2>
-<p>Besuchen Sie uns auf Instagram, um unsere neuesten Beiträge zu sehen.</p>
-<a href="https://www.instagram.com/vyral.club/" target="_blank">Folgen Sie uns auf Instagram</a>
-</section>
+    <main class="hauptinhalt">
+        <section class="angebotsbereich">
+            <h2 class="bereichsueberschrift">Unsere Mitgliedschaften</h2>
+            <p class="bereichstext">Wählen Sie das passende Paket für Ihre Bedürfnisse</p>
+            
+            <div class="abo-container">
+                <!-- Silber Abo -->
+                <article class="abo-karte">
+                    <h3 class="abo-name">Silber</h3>
+                    <div class="preisangabe">
+                        <span class="preis">9,99 €</span>
+                        <small class="preisintervall">pro Monat</small>
+                    </div>
+                    <ul class="vorteilsliste">
+                        <li class="vorteil">Basis-Zugang zu Inhalten</li>
+                        <li class="vorteil">Wöchentliche Updates</li>
+                        <li class="vorteil">Community Forum</li>
+                    </ul>
+                    <a href="#" class="aktion-button abo-button">Auswählen</a>
+                </article>
+                
+                <!-- Diamond Abo -->
+                <article class="abo-karte highlight-abo">
+                    <h3 class="abo-name">Diamond</h3>
+                    <div class="preisangabe">
+                        <span class="preis">29,99 €</span>
+                        <small class="preisintervall">pro Monat</small>
+                    </div>
+                    <ul class="vorteilsliste">
+                        <li class="vorteil">Voller Content-Zugang</li>
+                        <li class="vorteil">Tägliche Updates</li>
+                        <li class="vorteil">Premium Community</li>
+                    </ul>
+                    <a href="#" class="aktion-button abo-button">Auswählen</a>
+                </article>
+                
+                <!-- Premium Abo -->
+                <article class="abo-karte">
+                    <h3 class="abo-name">Premium</h3>
+                    <div class="preisangabe">
+                        <span class="preis">59,99 €</span>
+                        <small class="preisintervall">pro Monat</small>
+                    </div>
+                    <ul class="vorteilsliste">
+                        <li class="vorteil">Alle Premium-Inhalte</li>
+                        <li class="vorteil">Persönlicher Support</li>
+                        <li class="vorteil">VIP-Events</li>
+                    </ul>
+                    <a href="#" class="aktion-button abo-button">Auswählen</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="social-bereich">
+            <h2 class="bereichsueberschrift">Unsere Social Media Präsenz</h2>
+            <p class="bereichstext">Folgen Sie uns für tägliche Updates</p>
+            <a href="https://www.instagram.com/vyral.club/" target="_blank" class="social-link">Instagram @vyral.club</a>
+        </section>
+    </main>
+
+    <footer class="fussbereich">
+        <div class="fusszeile">
+            <p class="copyright">&copy; 2023 Vyral.club | Alle Rechte vorbehalten</p>
+            <nav class="rechtliches">
+                <a href="#" class="rechtlicher-link">Impressum</a>
+                <a href="#" class="rechtlicher-link">Datenschutz</a>
+                <a href="#" class="rechtlicher-link">Kontakt</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
