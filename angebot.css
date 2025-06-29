@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -6,135 +5,232 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
-header {
-    background-color: black;
-    color: gold;
-    padding: 20px;
+/* Kopfbereich */
+.kopfbereich {
+    background-color: #000;
+    color: #FFD700;
+    padding: 1rem 2rem;
 }
 
-nav ul {
+.hauptnavigation {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navigationsliste {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
 }
 
-nav ul li a {
-    color: gold;
+.navigationspunkt {
+    padding: 0.5rem;
+}
+
+.navigationslink {
+    color: #FFD700;
     text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease-in-out;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: white;
+.navigationslink:hover {
+    background-color: rgba(255, 215, 0, 0.2);
 }
 
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.aktuell {
+    border-bottom: 2px solid #FFD700;
 }
 
-.hero h1 {
-    font-size: 48px;
+/* Hero Bereich */
+.hero-bereich {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('hintergrund.jpg') center/cover;
+}
+
+.hauptueberschrift {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.untertitel {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Allgemeine Bereichsstyles */
+.bereichsueberschrift {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
-.hero p {
-    font-size: 24px;
+.bereichstext {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-.cta {
-    background-color: gold;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.cta:hover {
-    background-color: #ffe600;
-}
-
-section {
-    padding: 50px;
-}
-
-section h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-}
-
-.plans {
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    gap: 30px;
-}
-
-.plan {
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    text-align: center;
-    transition: box-shadow 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: 300px; 
-}
-
-.plan:hover {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-}
-
-.plan h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.plan .price {
-    margin-bottom: 20px;
-}
-
-.plan .price span {
-    display: block;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.plan .price small {
-    display: block;
-    font-size: 16px;
+    margin-bottom: 2rem;
     color: #666;
-    margin-bottom: 15px;
 }
 
-.plan ul {
-    margin-bottom: 30px;
-    text-align: left;
-    padding-left: 20px;
+/* Abo Karten */
+.abo-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
-.plan ul li {
-    margin-bottom: 10px;
-    line-height: 1.5;
+.abo-karte {
+    background: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+    width: 320px;
+    transition: transform 0.3s ease;
 }
 
-.plan .cta {
-    margin-top: auto;
+.abo-karte:hover {
+    transform: translateY(-10px);
+}
+
+.highlight-abo {
+    border: 2px solid #FFD700;
+    position: relative;
+}
+
+.abo-name {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.preisangabe {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.preis {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #000;
+    display: block;
+}
+
+.preisintervall {
+    color: #666;
+    font-size: 1rem;
+}
+
+.vorteilsliste {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.vorteil {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #EEE;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.vorteil:before {
+    content: "✓";
+    color: #FFD700;
+    position: absolute;
+    left: 0;
+}
+
+/* Buttons */
+.aktion-button {
+    display: inline-block;
+    background-color: #FFD700;
+    color: #000;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.aktion-button:hover {
+    background-color: #FFC000;
+    transform: scale(1.05);
+}
+
+.abo-button {
+    width: 100%;
+    text-align: center;
+}
+
+/* Social Bereich */
+.social-bereich {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #FAFAFA;
+}
+
+.social-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #FFD700;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #FFD700;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #FFD700;
+    color: #000;
+}
+
+/* Fußbereich */
+.fussbereich {
+    background-color: #111;
+    color: #FFF;
+    padding: 2rem;
+}
+
+.fusszeile {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.rechtliches {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.rechtlicher-link {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.rechtlicher-link:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    color: #AAA;
 }
